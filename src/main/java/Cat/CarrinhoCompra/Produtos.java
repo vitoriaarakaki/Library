@@ -1,8 +1,8 @@
 package Cat.CarrinhoCompra;
 
-import Cat.Books.Books;
+import Cat.Books.Livro;
 
-public class Produtos extends Books{
+public class Produtos extends Livro{
 	
 
 }

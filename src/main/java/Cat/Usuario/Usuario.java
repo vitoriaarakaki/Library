@@ -1,41 +1,46 @@
 package Cat.Usuario;
 
-import Cat.Endereco.Endereco;
+import Cat.Cartao.Cartao;
+import Cat.Lugar.Lugar;
 
 public class Usuario {
 
-	private Integer User_Id;
+	private Integer IdCliente;
+	private String Nome;
+	private String Sobrenome;
 	private String Email;
+	private String Telefone;
 	private String Senha;
-	private String Fname;
-	private String Sname;
-	private String Celular;
 	private String Genero;
 	
-	private Endereco Endereco;
+	private Lugar Lugar;
+	private Cartao Cartao;
 	
 	
-	public Usuario(Integer user_Id, String email, String senha, String fname, String sname, String celular, String genero, Endereco endereco) {
+	public Usuario(Integer idcliente, String nome, String sobrenome, String email, String telefone, String senha, String genero, Lugar lugar, Cartao cartao) {
 		super();
-		User_Id = user_Id;
+		IdCliente = idcliente;
+		Nome = nome;
+		Sobrenome = sobrenome;
 		Email = email;
+		Telefone = telefone;
 		Senha = senha;
-		Fname = fname;
-		Sname = sname;
-		Celular = celular;
 		Genero = genero;
-		Endereco = endereco;
+		
+		Lugar = lugar;
+		Cartao = cartao;
 	}
 	
-	public Usuario(Integer user_Id, String email, String senha, String fname, String sname, String celular, String genero) {
+
+	public Usuario(Integer idcliente, String nome, String sobrenome, String email, String telefone, String senha, String genero) {
 		super();
 		
-		User_Id = user_Id;
+		IdCliente = idcliente;
+		Nome = nome;
+		Sobrenome = sobrenome;
 		Email = email;
+		Telefone = telefone;
 		Senha = senha;
-		Fname = fname;
-		Sname = sname;
-		Celular = celular;
 		Genero = genero;
 	} 
 	
@@ -44,72 +49,101 @@ public class Usuario {
 	}
 
 
-	public Integer getUser_Id() {
-		return User_Id;
+	public Integer getIdCliente() {
+		return IdCliente;
 	}
 
-	public void setUser_Id(Integer user_Id) {
-		User_Id = user_Id;
+
+	public void setIdCliente(Integer idCliente) {
+		IdCliente = idCliente;
 	}
+
+	public String getNome() {
+		return Nome;
+	}
+	
+	
+	public void setNome(String nome) {
+		Nome = nome;
+	}
+
+	
+
+
+	public String getSobrenome() {
+		return Sobrenome;
+	}
+
+
+	public void setSobrenome(String sobrenome) {
+		Sobrenome = sobrenome;
+	}
+
 
 	public String getEmail() {
 		return Email;
 	}
 
+
 	public void setEmail(String email) {
 		Email = email;
 	}
+
+
+	public String getTelefone() {
+		return Telefone;
+	}
+
+
+	public void setTelefone(String telefone) {
+		Telefone = telefone;
+	}
+
 
 	public String getSenha() {
 		return Senha;
 	}
 
+
 	public void setSenha(String senha) {
 		Senha = senha;
 	}
 
-	public String getFname() {
-		return Fname;
-	}
-
-	public void setFname(String fname) {
-		Fname = fname;
-	}
-
-	public String getSname() {
-		return Sname;
-	}
-
-	public void setSname(String sname) {
-		Sname = sname;
-	}
-
-	public String getCelular() {
-		return Celular;
-	}
-
-	public void setCelular(String celular) {
-		Celular = celular;
-	}
 
 	public String getGenero() {
 		return Genero;
 	}
 
+
 	public void setGenero(String genero) {
 		Genero = genero;
 	}
 
-	public Endereco getEndereco() {
-		return Endereco;
+
+	public Lugar getLugar() {
+		return Lugar;
 	}
 
-	public void setEndereco(Endereco endereco) {
-		Endereco = endereco;
+
+	public void setLugar(Lugar lugar) {
+		Lugar = lugar;
 	}
+
+
+	public Cartao getCartao() {
+		return Cartao;
+	}
+
+
+	public void setCartao(Cartao cartao) {
+		Cartao = cartao;
+	}
+
 
 	public void CadastrarUsuario(Usuario usuario) {
 		
 	}
+
+
 }
 

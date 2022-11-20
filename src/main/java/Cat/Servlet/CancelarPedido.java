@@ -3,7 +3,7 @@ package Cat.Servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import Cat.Books.BooksDao;
+import Cat.Books.LivroDao;
 import Cat.Usuario.Usuario;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -20,8 +20,8 @@ public class CancelarPedido extends HttpServlet {
 			String id = request.getParameter("id");
 			Usuario us = (Usuario) request.getSession().getAttribute("auth");
 			if(id != null) {
-				BooksDao bD = new BooksDao();
-				bD.CancelarPedido(us.getUser_Id());
+				LivroDao bD = new LivroDao();
+				bD.CancelarPedido(us.getIdCliente());
 			}
 			response.sendRedirect("Pedidos.jsp");
 		} catch (Exception e) {

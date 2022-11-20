@@ -33,7 +33,7 @@ public class RemoverProduto extends HttpServlet {
 							id2 = id2 - 10;
 						}
 						
-						if(c.getIdBook() == id2) {
+						if(c.getIdLivro() == id2) {
 							
 							cart_List.remove(cart_List.indexOf(c));
 							

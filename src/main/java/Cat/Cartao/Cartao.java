@@ -4,36 +4,43 @@ import Cat.Usuario.Usuario;
 
 public class Cartao {
 	
+	private Integer IdCartao;
 	private Integer Numero;
 	private String Nome;
-	private String DataValidade;
-	private Integer CVV;
-	private String Id;
+	private Integer Vencimento;
+	private Integer Seguranca;
 	
-	private Usuario User_Id;
+	private Usuario IdCliente;
 	
-	public Cartao(Integer numero, String nome, String dataValidade, Integer cvv, String id, Usuario user_Id) {
+	public Cartao(Integer idcartao, Integer numero, String nome, Integer vencimento, Integer seguranca, Usuario idcliente) {
 		super();
 	Numero = numero;
 	Nome = nome;
-	DataValidade = dataValidade;
-	CVV = cvv;
-	Id = id;
-	User_Id = user_Id;
+	Vencimento = vencimento;
+	Seguranca = seguranca;
+	IdCliente = idcliente;
 
 	}
 	
-	public Cartao(Integer numero, String nome, String dataValidade, Integer cvv, String id) {
+	public Cartao(Integer idcartao, Integer numero, String nome, Integer vencimento, Integer seguranca) {
 		super();
-	Numero = numero;
-	Nome = nome;
-	DataValidade = dataValidade;
-	CVV = cvv;
-	Id = id;
+		Numero = numero;
+		Nome = nome;
+		Vencimento = vencimento;
+		Seguranca = seguranca;
+
 	}
 	
 	public Cartao() {
 		
+	}
+
+	public Integer getIdCartao() {
+		return IdCartao;
+	}
+
+	public void setIdCartao(Integer idCartao) {
+		IdCartao = idCartao;
 	}
 
 	public Integer getNumero() {
@@ -52,38 +59,30 @@ public class Cartao {
 		Nome = nome;
 	}
 
-	public String getDataValidade() {
-		return DataValidade;
+	public Integer getVencimento() {
+		return Vencimento;
 	}
 
-	public void setDataValidade(String dataValidade) {
-		DataValidade = dataValidade;
+	public void setVencimento(Integer vencimento) {
+		Vencimento = vencimento;
 	}
 
-	public Integer getCVV() {
-		return CVV;
+	public Integer getSeguranca() {
+		return Seguranca;
 	}
 
-	public void setCVV(Integer cVV) {
-		CVV = cVV;
+	public void setSeguranca(Integer seguranca) {
+		Seguranca = seguranca;
 	}
 
-	public String getId() {
-		return Id;
+	public Usuario getIdCliente() {
+		return IdCliente;
 	}
 
-	public void setId(String id) {
-		Id = id;
+	public void setIdCliente(Usuario idCliente) {
+		IdCliente = idCliente;
 	}
 
-	public Usuario getUser_Id() {
-		return User_Id;
-	}
-
-	public void setUser_Id(Usuario user_Id) {
-		User_Id = user_Id;
-	}
-	
 	
 
 }

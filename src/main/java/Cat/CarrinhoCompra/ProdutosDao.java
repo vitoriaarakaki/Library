@@ -22,17 +22,17 @@ public class ProdutosDao {
 			Connection ObterConexao = Conexao.ObterConexao();
 			if (cartList.size() > 0) {
 				for (Carrinho item : cartList) {
-					if(item.getIdBook() < 10) {
-						query = "SELECT * FROM BOOKS WHERE IdBook = ?";
+					if(item.getIdLivro() < 10) {
+						query = "SELECT * FROM LIVRO WHERE IDLIVRO = ?";
 						PreparedStatement preparador = ObterConexao.prepareStatement(query);
-						preparador.setInt(1, item.getIdBook());
+						preparador.setInt(1, item.getIdLivro());
 						result = preparador.executeQuery();
 						while (result.next()) {
 							Carrinho r = new Carrinho();
-							r.setIdBook(result.getInt("idbook"));
+							r.setIdLivro(result.getInt("idlivro"));
 							r.setNome(result.getString("nome"));
 							r.setAutora(result.getString("autora"));
-							r.setPrice(result.getFloat("price") * item.getQuantity());
+							r.setPreco(result.getDouble("preco") * item.getQuantity());
 							r.setQuantity(item.getQuantity());
 							produtos.add(r);
 						}
@@ -54,10 +54,10 @@ public class ProdutosDao {
 			Connection ObterConexao = Conexao.ObterConexao();
 			if (cartList.size() > 0) {
 				for (Carrinho item : cartList) {
-					if (item.getIdBook() < 10) {
+					if (item.getIdLivro() < 10) {
 						query = "SELECT * FROM BOOKS WHERE IdBook = ?";
 						PreparedStatement preparador = ObterConexao.prepareStatement(query);
-						preparador.setInt(1, item.getIdBook());
+						preparador.setInt(1, item.getIdLivro());
 						result = preparador.executeQuery();
 
 						while (result.next()) {

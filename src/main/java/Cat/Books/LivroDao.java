@@ -11,27 +11,28 @@ import Cat.BancoDados.Conexao;
 import Cat.CarrinhoCompra.Carrinho;
 
 
-public class BooksDao {
+public class LivroDao {
 
 	private PreparedStatement preparador;
 	private ResultSet result;
 	private String query;
 	
-	public boolean books(Books books) throws SQLException {
+	public boolean books(Livro livro) throws SQLException {
 		boolean result =  false;
 		Connection conexao = Conexao.ObterConexao();
 		
-		String sql = "INSERT INTO Books(IdBook, Nome, Autora, genero, dataDeP, price, sinopse) VALUES (?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO Books(IdLivro, Nome, Editora, Autora, Genero, Lancamento, Preco, Descricao) VALUES (?,?,?,?,?,?,?,?)";
 		
 		try {
 			preparador = conexao.prepareStatement(sql);
-			preparador.setInt(1, books.getIdBook());
-			preparador.setString(2, books.getNome());
-			preparador.setString(3, books.getAutora());
-			preparador.setString(4, books.getGenero());
-			preparador.setString(5, books.getDataDeP());
-			preparador.setFloat(6, books.getPrice());
-			preparador.setString(7, books.getSinopse());
+			preparador.setInt(1, livro.getIdLivro());
+			preparador.setString(2, livro.getNome());
+			preparador.setString(3, livro.getEditora());
+			preparador.setString(4, livro.getAutora());
+			preparador.setString(5, livro.getGenero());
+			preparador.setString(6, livro.getLancamento());
+			preparador.setDouble(7, livro.getPreco());
+			preparador.setString(8, livro.getDescricao());
 			
 			preparador.execute();
 			System.out.println("Livro adicionado com sucesso");
@@ -45,6 +46,7 @@ public class BooksDao {
 		return result;
 	}
 	
+	@SuppressWarnings("unused")
 	public List<Carrinho> usuarioPedidos (int id) throws SQLException{
 		List<Carrinho> lista = new ArrayList<>();
 		Connection conexao = Conexao.ObterConexao();
@@ -52,18 +54,18 @@ public class BooksDao {
 		
 		try {
 			
-			query = "SELECT * FROM Books WHERE User_Id =?";
+			query = "SELECT * FROM LIVROS WHERE IDCLIENTE =?";
 			preparador = conexao.prepareStatement(query);
 			preparador.setInt(1, id);
 			result = preparador.executeQuery();
 			while(result.next()) {
-				Books books= new Books();
+				Livro books= new Livro();
 				
-				BooksDao bD = new BooksDao();
+				LivroDao bD = new LivroDao();
 				
-				int bookId = (result.getInt("Book_id"));
-				System.out.println(bookId + " ");
-				lista = bD.getSingleProduct(bookId);
+				int livroId = (result.getInt("IdLivro"));
+				System.out.println(livroId + " ");
+				lista = bD.getSingleProduct(livroId);
 								
 			}
 			
@@ -79,15 +81,15 @@ public class BooksDao {
 		Carrinho car = new Carrinho();
 		Connection conexao = Conexao.ObterConexao();
 		try {
-			query= "SELECT * FROM Books WHERE IdBook = ?";
+			query= "SELECT * FROM LIVROS WHERE IDLIVROS = ?";
 			preparador = conexao.prepareStatement(query);
 			preparador.setInt(1, IdBook);
 			result = preparador.executeQuery();
 			while(result.next()) {
-				car.setIdBook(result.getInt("idbook"));
+				car.setIdLivro(result.getInt("idlivro"));
 				car.setNome(result.getString("nome"));
 				car.setAutora(result.getString("autora"));
-				car.setPrice(result.getFloat("price"));
+				car.setPreco(result.getDouble("preco"));
 				list.add(car);
 			}
 			
@@ -97,13 +99,13 @@ public class BooksDao {
 		return list;
 	}
 		
-		public void CancelarPedido(int User_Id) throws SQLException {
+		public void CancelarPedido(int IdCliente) throws SQLException {
 			Connection conexao = Conexao.ObterConexao();
 			
 			try {
-				query = "DELETE FROM Books WHERE User_Id = ?";
+				query = "DELETE FROM LIVRO WHERE IDCLIENTE = ?";
 				preparador = conexao.prepareStatement(query);
-				preparador.setInt(1, User_Id);
+				preparador.setInt(1, IdCliente);
 				preparador.execute();
 				
 				

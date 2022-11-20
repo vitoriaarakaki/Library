@@ -3,7 +3,7 @@ package Cat.Servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import Cat.Endereco.Endereco;
+import Cat.Lugar.Lugar;
 import Cat.Usuario.Usuario;
 import Cat.Usuario.UsuarioDao;
 import jakarta.servlet.ServletException;
@@ -20,16 +20,16 @@ import jakarta.servlet.http.HttpServletResponse;
 	
 			
 			try (PrintWriter out  = resp.getWriter()){
-				Integer user_Id   = Integer.parseInt(req.getParameter("user_Id"));
-				String email      = req.getParameter("email");
-				String senha      = req.getParameter("senha");
-				String fname      = req.getParameter("fname");
-				String sname      = req.getParameter("sname");
-				String celular    = req.getParameter("celular");
-				String genero     = req.getParameter("genero");
-				Object endereco = String.valueOf(req.getParameter("endereco"));
+				Integer IdCliente   = Integer.parseInt(req.getParameter("IdCliente"));
+				String Nome      = req.getParameter("Nome");
+				String Sobrenome     = req.getParameter("Sobrenome");
+				String Email      = req.getParameter("email");
+				String Senha      = req.getParameter("senha");
+				String Telefone    = req.getParameter("Telefone");
+				String Genero     = req.getParameter("genero");
+				Object Lugar = String.valueOf(req.getParameter("Lugar"));
 				
-				Usuario us = new Usuario(user_Id, email, senha, fname, sname, celular, genero, (Endereco) endereco);
+				Usuario us = new Usuario(IdCliente, Nome, Sobrenome, Email, Senha, Telefone, Genero, (Lugar) Lugar);
 				UsuarioDao uDao = new UsuarioDao();
 				uDao.cadastrar(us);
 						
