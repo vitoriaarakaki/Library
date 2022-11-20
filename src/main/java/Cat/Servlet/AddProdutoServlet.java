@@ -29,7 +29,7 @@ public class AddProdutoServlet extends HttpServlet {
 
 			Carrinho c = new Carrinho();
 
-			c.setIdBook(id);
+			c.setIdLivro(id);
 
 			c.getQuantity();
 
@@ -47,7 +47,7 @@ public class AddProdutoServlet extends HttpServlet {
 
 				for (Carrinho h : cart_List) {
 
-					if (h.getIdBook() == id) {
+					if (h.getIdLivro() == id) {
 						exist = true;
 
 						out.println("<script type=\"text/javascript\">");

@@ -29,7 +29,7 @@ import jakarta.servlet.http.HttpServletResponse;
 				String Genero     = req.getParameter("genero");
 				Object Lugar = String.valueOf(req.getParameter("Lugar"));
 				
-				Usuario us = new Usuario(IdCliente, Nome, Sobrenome, Email, Senha, Telefone, Genero, (Lugar) Lugar);
+				Usuario us = new Usuario(IdCliente, Nome, Sobrenome, Email, Senha, Telefone, Genero, (Lugar) Lugar, null);
 				UsuarioDao uDao = new UsuarioDao();
 				uDao.cadastrar(us);
 						
