@@ -1,0 +1,620 @@
+* body {
+
+
+  background-color: rgb(252, 250, 247);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+
+}
+
+.NavBar {
+
+
+  box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.37);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+  height: 65px;
+  right: -1px;
+  left: -1px;
+  background-color: rgba(255, 255, 255, 0.884);
+  position: fixed;
+  z-index: 2;
+
+}
+
+.NavBar li {
+
+  display: inline;
+  margin-left: 600px;
+  padding: 90px;
+
+
+
+
+}
+
+.NavBar a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(78, 77, 77);
+
+
+
+}
+
+
+.NavBar a:hover {
+  color: #40b5e4;
+
+  text-decoration: none;
+}
+
+
+
+.imgc {
+
+  margin-top: 8px;
+  margin-left: 15px;
+  position: relative;
+
+
+
+
+}
+
+.imgc img {
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  margin-left: -20px;
+  position: relative;
+}
+
+.gatinha {
+  margin-top: -10px;
+  position: relative;
+  margin-top: -39px;
+  margin-left: 25px;
+  position: relative;
+
+}
+
+.gatinha h1 {
+  display: inline-block;
+  font-size: 1em;
+  z-index: 10px;
+  color: #4accff;
+  position: relative;
+  margin-top: 10px;
+
+
+
+}
+
+.button1 {
+  width: 100px;
+  height: 40px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(168, 105, 228);
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left: 1180px;
+  margin-top: -40px;
+
+}
+
+.button1 a {
+  display: block;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+
+.button1 a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(111, 63, 158);
+  height: 20px;
+  border-radius: 20px;
+
+}
+
+
+
+
+
+.fundoImg {
+
+  height: 755px;
+  background: rgb(250, 250, 250);
+
+
+
+
+}
+
+.fundoImg img {
+
+  width: 100%;
+  max-height: 650px;
+
+
+
+}
+
+.fubdoT img {
+  display: inline;
+  position: relative;
+
+
+}
+
+.fubdoT title {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -480px;
+  font-size: 4rem;
+  margin-left: 140px;
+
+}
+
+.fubdoT title2 {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -450px;
+  font-size: 3.8rem;
+  margin-left: 740px;
+}
+
+
+.fubdoT title3 {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -450px;
+  font-size: 4rem;
+  margin-left: 140px;
+
+}
+
+.fubdoT title4 {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -450px;
+  font-size: 3.8rem;
+  margin-left: 740px;
+}
+
+
+.fubdoT .subtitle11 {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -380px;
+  font-size: 2.3rem;
+  margin-left: 140px;
+
+}
+
+.fubdoT .subtitle12 {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -370px;
+  font-size: 2.3rem;
+  margin-left: 740px;
+
+}
+
+.fubdoT .subtitle13 {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -370px;
+  font-size: 2.3rem;
+  margin-left: 140px;
+
+}
+
+.fubdoT .subtitle14 {
+  position: absolute;
+  display: inline-block;
+  color: rgb(3, 8, 8);
+  margin-top: -370px;
+  font-size: 2.3rem;
+  margin-left: 740px;
+
+}
+
+.button11 {
+  width: 360px;
+  height: 90px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(168, 105, 228);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left: 179px;
+
+  position: absolute;
+  margin-top: -205px;
+
+}
+
+.button11 a {
+  display: block;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 25px;
+  font-size: 2rem;
+  text-decoration: none;
+
+}
+
+.button11:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(111, 63, 158);
+
+}
+
+
+.amoeba {
+
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  color: rgb(105, 67, 141);
+  margin-top: 40px;
+
+
+}
+
+.sliders1 {
+  max-width: 1300px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+  transform: scale(0.8)
+}
+
+.sliders1 .card1 {
+  background-color: rgb(252, 250, 247);
+  flex: 1;
+
+  max-width: 200px;
+  padding: 10px;
+
+
+
+}
+
+.sliders1 .card1 .imgc {
+  height: 300px;
+  width: 100%;
+
+}
+
+.sliders1 .card1 .imgc img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sliders1 .card1 .content {
+
+  padding: 10px 50px;
+
+}
+
+.card1 .content .title {
+
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(127, 79, 172);
+
+}
+
+.card1 .content .sub-title {
+
+  font-size: 20px;
+  font-weight: 100;
+
+  line-height: 20px;
+
+}
+
+.card1 .content {
+
+  text-align: justify;
+  margin: 10px 0 10px;
+
+
+}
+
+.card1 .content .button1 {
+
+  width: 100px;
+  height: 40px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  background-color: rgb(168, 105, 228);
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  color: beige;
+  margin-left: -8px;
+  margin-top: 10px;
+
+}
+
+.button2 {
+  width: 100px;
+  height: 40px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(168, 105, 228);
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+}
+
+.button2 a {
+  display: block;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.livros1 a {
+  margin-left: 600px;
+  text-decoration: none;
+  font-size: 40px;
+  float: left;
+  display: flex;
+  margin-top: -8px;
+  color: rgb(21, 160, 202);
+}
+
+.livros1 img {
+  width: 25px;
+  height: 30px;
+  margin-left: 10px;
+  float: left;
+  margin-top: 0px;
+
+}
+
+
+.slider1 {
+  display: flex;
+  height: 320px;
+  width: 100%;
+  margin-top: 0px;
+
+  transform: scale(0.8)
+}
+
+.slider1 .content2 {
+
+  margin: 10px;
+  transform: scale(0.8)
+}
+
+.slider1 .card2 .content2 {
+  height: 350px;
+  width: 290px;
+  background-color: rgb(33, 101, 122);
+
+  margin-left: -50px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.slider1 .card2 .content2 .title2 {
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px 25px;
+
+
+}
+
+.title2 a {
+  text-decoration: none;
+  color: aliceblue;
+
+
+
+
+}
+
+.slider1 .card2 .content2 p {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0px 25px;
+  margin-top: 200px;
+
+
+}
+
+.card2 .content2 img {
+  width: 20px;
+  height: 20px;
+  margin: -100px 200px 19px;
+
+
+
+
+}
+
+.slider1 .card3 img {
+
+  height: 320px;
+  width: 260px;
+  position: absolute;
+  float: left;
+  max-height: 400px;
+  max-width: 280px;
+
+
+
+
+}
+
+.card3 .imgg {
+  display: flex;
+  position: relative;
+  margin-top: 39px;
+  width: 260px;
+  height: 320px;
+  background-color: rgb(33, 101, 122);
+  border-radius: 8px;
+
+
+}
+
+
+
+.card3 img:hover {
+  opacity: 0;
+
+
+}
+
+
+
+
+.grow:hover {
+
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.slider1 .card3 .content2 .title3 li {
+  list-style: none;
+  margin-top: -1px;
+  margin-left: 10px;
+  font-weight: 600;
+
+
+  font-size: 18px;
+  color: rgb(234, 229, 240);
+  pointer-events: all;
+}
+
+.card3 .title3 p {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 40px;
+  margin-bottom: 30px;
+
+
+}
+
+
+
+
+.slider1 .card3 .content2 .title4 li {
+  list-style: none;
+  margin-top: 70px;
+  margin-left: px;
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(127, 79, 172);
+  pointer-events: all;
+
+
+
+}
+
+.card3 li:hover {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+.rodape {
+  position: static;
+  height: 15%;
+  margin-top: 90px;
+  background-color: rgb(69, 70, 71);
+  margin-bottom: -80px;
+}
+
+
+.rodape .icons img {
+  padding: 40px;
+  margin-top: -30px;
+
+
+}
+
+.rodape p {
+  color: aliceblue;
+  padding: 0px 0px 0px 0;
+
+
+
+}
+
+.iconcop p {
+  margin-left: 610px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+
+}
+
+.iconcop img {
+
+  margin-left: 554px;
+  margin-bottom: -60px;
+  display: flex;
+  width: 60px;
+  height: 60px;
+}
+
+.rodape .link1 a {
+  margin-left: 573px;
+  display: inline;
+  position: relative;
+  color: rgb(255, 249, 249);
+  margin-top: 30px;
+
+
+}

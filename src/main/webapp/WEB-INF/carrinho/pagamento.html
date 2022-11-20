@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="pagamento.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="payment-type">
+                <div class="types flex justify-space-between">
+                    <div class="type">
+                        <div class="text boleto">
+                            <img src="img/barcode.png" width="60px">
+                            <p>boleto</p>
+                        </div>
+                    </div>
+                    <div class="linha-vertical"></div>
+                    <div class="type">
+                        <div class="text cartao">
+                            <img src="img/credit-card.png" width="60px">
+                            <p>Cartão de crédito</p>
+                        </div>
+                    </div>
+                    <div class="linha-vertical"></div>
+                    <div class="type">
+                        <div class="text pix">
+                            <div class="pix-img"><img src="img/pngwing.com.png" width="50px"></div>
+                            <div class="pix-titulo"><p>Pix</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linha-horizontal"></div>
+            <div class="payment-info flex justify-space-between">
+                <div class="info-cartao">
+                    <div class="caixa-maior">
+                        <label for="name">Nome completo</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="caixa-maior">
+                        <label for="address">Cartão de crédito</label>
+                        <input id="address" type="text">
+                    </div>
+                    <div class="flex justify-space-between">
+                        <div class="validade">
+                            <label for="city">validade</label>
+                            <input id="city" type="text">
+                        </div>
+                        <div class="cod">
+                            <label for="state">código de segurança</label>
+                            <input id="state" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-titulo">Total:</div>
+                <div class="total-valor">R$ 0.00</div>
+            </div>
+        <div class="card-actions flex justify-space-between">
+            <div class="flex-start">
+            </div>
+            <div class="flex-end">
+               <button class="button button-primary">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </body>
+</html>

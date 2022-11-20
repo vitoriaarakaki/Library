@@ -1,0 +1,231 @@
+.container2{
+    margin-top: 200px;
+margin-right: 700px;
+}
+.container{
+
+    margin-left: 300px;
+    margin-bottom: -500px;
+    margin-top: 200px;
+    }
+    
+    .titleendereco{
+        margin-left: 600px;
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+#frete{
+    height: 10px;
+    margin: 0 0 0 20px;
+}
+
+.frete-info{
+    width: 600px;
+    margin: 4px 0 50px 100px;
+    position: absolute;
+}
+
+.endereço{
+   
+    width: 400px;
+    margin-bottom: 100px;
+}
+
+.frete-nome{
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+p{
+    margin-top: -17px;
+    margin-left: 20px;
+    width: 550px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.linha{
+    border-right: 1px solid black;
+    width: 5px;
+    margin-left: 690px;
+    height: 310px;
+    margin-bottom: 50px;
+}
+
+#resumo{
+    float: right;
+    margin: -360px 75px 0 0;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(214, 209, 209, 0.795);
+    padding: 1rem;
+    width: 520px;
+    box-sizing: border-box;
+}
+
+.total-itens{
+    text-align: center;
+    font-size: 30px;
+}
+
+.subtotal{
+    margin-top: 100px;
+}
+
+.total{
+    border-top: 1px solid black;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+.subtotal-valor,
+.total-valor,
+.frete-valor{
+    text-align: right;
+    margin-top: -30px;
+}
+
+.subtotal-titulo{
+    margin-top: 20px;
+}
+
+.total-titulo{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#botao-finalizar-compra{
+    border-top: 1px solid black;
+}
+
+.botao{
+    padding: 10px;
+    margin-left: 480px;
+    margin-top: 50px;
+}
+
+.botao-texto{
+    background-color:  #ab76e7;
+    color: #fff;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 26px;
+    text-align: center;
+    padding: 8px;
+    width: 500px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.caixa-maior, label{
+	width: 200px;
+	font-size: 16px;
+}
+.caixa-menor, label{
+	width: 200px;
+	font-size: 16px;
+}
+.validade, label{
+	width: 100px;
+}
+
+.cod, label{
+	width: 200px;
+}
+
+.caixa-maior{
+	margin-left: 480px;
+	padding: 12px;
+	display: block;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.caixa-menor{
+	margin-left: 790px;
+    margin-top: -80px;
+	padding: 12px;
+	display: block;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.caixa-menor2{
+	margin-left: 750px;
+    margin-top: -70px;
+	padding: 12px;
+	display: block;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+
+.validade{
+	margin: 25px;
+	margin-left: 490px;
+	margin-top: -0.5px;
+	padding: 4px;
+	display: block;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.cod{
+	margin-top: -29px;
+	margin-left: 90px;
+	padding: 4px;
+	display: block;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+input{
+	height: 25px;
+	border: none;
+	box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.37) ;
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+
+input:focus-visible{
+	outline: 2px solid #d69ee2;
+}
+
+#city{
+	width: 100px;
+}
+
+#state{
+	width: 100px;
+}
+
+#name{
+	width: 250px;
+}
+#N{
+	width: 100px;
+}
+
+#address{
+	width: 150px;
+}
+#address2{
+	width: 100px;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row wrap;
+	align-items: center;
+}
+
+
+
+
+  
+  
