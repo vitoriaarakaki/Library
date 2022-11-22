@@ -47,13 +47,13 @@ public class ProdutosDao {
 		return produtos;
 	}
 
-	public double getTotalCartPrice(ArrayList<CarrinhoCompras> cartList) {
+	public double getTotalCartPrice(ArrayList<CarrinhoCompras> carList) {
 		double soma = 0;
 
 		try {
 			Connection ObterConexao = Conexao.ObterConexao();
-			if (cartList.size() > 0) {
-				for (CarrinhoCompras item : cartList) {
+			if (carList.size() > 0) {
+				for (CarrinhoCompras item : carList) {
 					if (item.getIdLivro() < 10) {
 						query = "SELECT * FROM BOOKS WHERE IdBook = ?";
 						PreparedStatement preparador = ObterConexao.prepareStatement(query);

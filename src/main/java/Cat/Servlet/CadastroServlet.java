@@ -24,8 +24,8 @@ import jakarta.servlet.http.HttpServletResponse;
 				String Nome      = req.getParameter("firstname");
 				String Sobrenome     = req.getParameter("lastname");
 				String Email      = req.getParameter("email");
-				String Senha      = req.getParameter("password");
 				String Telefone    = req.getParameter("number");
+				String Senha      = req.getParameter("password");
 				String Genero     = req.getParameter("gender");
 				//Object Lugar = String.valueOf(req.getParameter("Lugar"));
 				
@@ -35,7 +35,7 @@ import jakarta.servlet.http.HttpServletResponse;
 						
 				out.println("<script type=\"text/javascript\">");  
 				out.println("alert('Olhe o seu terminal e digite suas credenciaias do banco de dados ');"); 
-				out.print("window.location.href = 'form.html#loginmodel';");
+				out.print("window.location.href = 'PaginaP.jsp#login';");
 				out.println("</script>");
 				
 			} catch (Exception e) {

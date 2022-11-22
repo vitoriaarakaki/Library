@@ -1,8 +1,7 @@
 package Cat.CarrinhoCompra;
 
-import Cat.Books.Livro;
+//import Cat.Books.Livro;
 
-@SuppressWarnings("unused")
 public class CarrinhoCompras extends Produtos {
 	
 	private int Quantity;
