@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import Cat.CarrinhoCompra.Carrinho;
+import Cat.CarrinhoCompra.CarrinhoCompras;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -25,10 +25,10 @@ public class RemoverProduto extends HttpServlet {
 			
 			if(id != null) {
 			
-				ArrayList<Carrinho>cart_List = (ArrayList<Carrinho>) request.getSession().getAttribute("cart-list");
+				ArrayList<CarrinhoCompras>cart_List = (ArrayList<CarrinhoCompras>) request.getSession().getAttribute("cart-list");
 				if(cart_List != null) {
 					
-					for(Carrinho c : cart_List) {
+					for(CarrinhoCompras c : cart_List) {
 						if(c.getNome() != null) {
 							id2 = id2 - 10;
 						}

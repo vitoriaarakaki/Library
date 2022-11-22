@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Cat.BancoDados.Conexao;
-import Cat.CarrinhoCompra.Carrinho;
+import Cat.CarrinhoCompra.CarrinhoCompras;
 
 
 public class LivroDao {
@@ -47,10 +47,10 @@ public class LivroDao {
 	}
 	
 	@SuppressWarnings("unused")
-	public List<Carrinho> usuarioPedidos (int id) throws SQLException{
-		List<Carrinho> lista = new ArrayList<>();
+	public List<CarrinhoCompras> usuarioPedidos (int id) throws SQLException{
+		List<CarrinhoCompras> lista = new ArrayList<>();
 		Connection conexao = Conexao.ObterConexao();
-		Carrinho c = new Carrinho();
+		CarrinhoCompras c = new CarrinhoCompras();
 		
 		try {
 			
@@ -76,9 +76,9 @@ public class LivroDao {
 		return lista;
 	}
 	
-	public List<Carrinho> getSingleProduct(int IdBook) throws SQLException {
-		List<Carrinho> list = new ArrayList<Carrinho>();
-		Carrinho car = new Carrinho();
+	public List<CarrinhoCompras> getSingleProduct(int IdBook) throws SQLException {
+		List<CarrinhoCompras> list = new ArrayList<CarrinhoCompras>();
+		CarrinhoCompras car = new CarrinhoCompras();
 		Connection conexao = Conexao.ObterConexao();
 		try {
 			query= "SELECT * FROM LIVROS WHERE IDLIVROS = ?";
